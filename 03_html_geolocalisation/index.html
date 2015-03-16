@@ -4,17 +4,17 @@
 	<meta charset="UTF-8">
 	<title>Test Api geolocation</title>
 	<script type="text/javascript">
-		function maFonction(position){
-			//alert("longitude :"+position.coords.longitude+", Latitue :"+position.coords.latitude+" ,Altitude"+position.coords.altitude);
-			var geoInfos ="Position détérminée : </br>";
+		function displayPosition(position){
+			var  geoInfos = "";
 			geoInfos += "Latitude : "+position.coords.latitude+"<br/>";
 			geoInfos += "Longitude : "+position.coords.longitude+"<br/>";
 			geoInfos += "Altitude : "+position.coords.altitude+"<br/>";
+			geoInfos += "Vitesse : "+position.coords.speed+"<br/>";
 			document.getElementById('geolocation').innerHTML=geoInfos;
 		}
 		if(navigator.geolocation){
 			//alert('l\'API de geolocation en HTML5 est disponible');
-			navigator.geolocation.getCurrentPosition(maFonction);
+			navigator.geolocation.watchPosition(displayPosition);
 		}else{
 			alert("Ca ne marche pas");
 		}
