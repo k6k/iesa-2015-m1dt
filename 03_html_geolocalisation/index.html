@@ -1,17 +1,22 @@
 <!doctype html>
 <html>
 <head>
-
+	<meta charset="UTF-8">
 	<title>Test Api geolocation</title>
 	<script type="text/javascript">
+		function maFonction(position){
+			alert("longitude :"+position.coords.longitude+", Latitue :"+position.coords.latitude+" ,Altitude"+position.coords.altitude);
+		}
 		if(navigator.geolocation){
-			alert('l\'API de geolocation en HTML5 est disponible');
+			//alert('l\'API de geolocation en HTML5 est disponible');
+			navigator.geolocation.getCurrentPosition(maFonction);
 		}else{
 			alert("Ca ne marche pas");
 		}
 	</script>
 </head>
 <body>
-
+	<!--   -->
+	<div id="geolocation"></div>
 </body>
 </html>
