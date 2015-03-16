@@ -6,8 +6,11 @@
 	<script type="text/javascript">
 		function maFonction(position){
 			//alert("longitude :"+position.coords.longitude+", Latitue :"+position.coords.latitude+" ,Altitude"+position.coords.altitude);
-			var div = document.getElementById('geolocation');
-			div.innerHTML="Zone d'affichage des coordonnées<ol><li>longitude :"+position.coords.longitude+"</li><li> Latitue  :"+position.coords.latitude+"</li><li>Altitude  :"+position.coords.altitude+"</li></ol>";
+			var geoInfos ="Position détérminée : </br>";
+			geoInfos += "Latitude : "+position.coords.latitude+"<br/>";
+			geoInfos += "Longitude : "+position.coords.longitude+"<br/>";
+			geoInfos += "Altitude : "+position.coords.altitude+"<br/>";
+			document.getElementById('geolocation').innerHTML=geoInfos;
 		}
 		if(navigator.geolocation){
 			//alert('l\'API de geolocation en HTML5 est disponible');
@@ -18,7 +21,7 @@
 	</script>
 </head>
 <body>
-	<!--   -->
+	<!-- Zone d'affichage des coordonnées  -->
 	<div id="geolocation">Zone d'affichage des coordonnées</div>
 </body>
 </html>
