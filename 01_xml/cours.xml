@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<news>
+	<title>News du jour</title>
+	<description>News du premier TP</description>
+	<link>iesa-news.com/news-du-jour</link>
+	<items>
+		<item>
+			<title>Item N1</title>
+			<description>Description Item1</description>
+			<link>iesa-news.com/news-du-jour/item-1</link>
+		</item>
+	</items>
+
+	<title>News du soir</title>
+	<description>News sans item</description>
+	<link>iesa-news.com/news-du-jour/no-items</link>
+</news>
