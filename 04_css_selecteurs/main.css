@@ -1,5 +1,12 @@
 	body{
 		font-family: 'OpenSans';
+
+		background-color: gray;
+		background-image: url(background.jpg);
+		background-position: center center, 100% 80% top left;
+		background-origin: border-box;
+		background-repeat: repeat-x;
+
 	}
 	/* Définition d'une police */
 	@font-face{
