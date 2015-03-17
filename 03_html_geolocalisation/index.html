@@ -29,6 +29,7 @@
 			}
 
 			document.getElementById('geolocation').innerHTML=info;
+			initializePosition(48.579400,7.7519);
 		}
 
 		function displayPosition(position){
@@ -42,6 +43,7 @@
 		}
 
 		function initializePosition(latitude,longitude){
+			//Position Châtelet : 48.579400,7.7519
 			var centerpos    =  new google.maps.LatLng(latitude,longitude);
 
 			//options relatives à la carte
@@ -52,6 +54,12 @@
 			};
 			//Zom 0 : Terre entère, 19 = Niveau de la rue
 			var map  = new google.maps.Map(document.getElementById("map"),optionsGmaps);
+
+			var marker 	 = new google.maps.Marker({
+				position : centerpos,
+				map 	 : map,
+				title	 : "Vous êtes ici"
+			});
 		}
 
 		if(navigator.geolocation){
