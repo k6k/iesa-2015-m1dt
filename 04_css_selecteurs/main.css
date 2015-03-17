@@ -27,6 +27,7 @@
 		text-decoration:none;
 		font-style: italic;
 		font-size: 12px;
+		font-variant: small-caps;
 	}
 	/* Sélecteur d'id */
 	#firstHeading{
