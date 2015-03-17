@@ -1,14 +1,24 @@
+	body{
+		font-family: 'OpenSans';
+	}
+	/* Définition d'une police */
+	@font-face{
+		font-family: 'OpenSans';
+		/* src:url('OpenSans-r.ttf') format('trueType'); */
+		src:url('OpenSans-r.ttf');
+	}
 	/*Selecteur d'élément */
 	p{
 		text-align: left;
-		font-family: helvetica;
 		font-size: .9em;
+		text-indent: 5%;
 	}
 
 	/* Selecteur Grouping */
 
 	h1,h2{
 		border-bottom: 1px solid #E1E1E1;
+		border-top: 1px solid #E1E1E1;
 	}
 
 	/* Selecteur descendant */
