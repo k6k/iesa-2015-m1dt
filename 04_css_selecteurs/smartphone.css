@@ -1,0 +1,19 @@
+.box{
+	width:  100%;
+	height: 200px;
+}
+.header{
+	background-color:#967ADC;
+}
+
+.sidebar{
+	background-color:#EC87C0;
+}
+
+.content{
+	background-color:#E6E9ED;
+}
+
+.footer{
+	background-color: #656D78;
+}
