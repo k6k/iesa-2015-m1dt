@@ -4,8 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Test Api geolocation</title>
 	<script type="text/javascript">
-		function displayError(err){
-			console.log(err.message);
+
+		//Fonction de Callback en cas d'erreur
+		function displayError(error){
+			//console.log(error.message);
+			var info = "Erreur lors de la géolocalisation : ";
+			switch(error.code){
+				case error.TIMEOUT:
+					 info += "Timeout !";
+				break;
+
+				case error.PERMISSION_DENIED:
+					 info += "Vous n'avez pas donné la permission";
+				break;
+
+				case error.POSITION_UNAVAILABLE:
+					 info += "La position n'a pas pu être déterminée";
+				break;
+
+				case error.UNKNuOW_ERROR:
+					 info += "Erreur inconnue";
+				break;
+			}
+
+			document.getElementById('geolocation').innerHTML=info;
 		}
 
 		function displayPosition(position){
