@@ -5,17 +5,19 @@
 <title>Dahu — Wikipédia</title>
 
 <style>
-	.box{width: 100px;height: 100px;color:#FFF;text-align: center;}
-	.red{background-color: red;position: absolute;left:70px;top:10px;}
-	.green{background-color: green;}
-	.yellow{background-color: #FFCC00;}
+	.box{width: 100px;height: 100px;color:#FFF;text-align: center;position:relative;}
+	.red{background-color: #950401;position: absolute;left:70px;top:60px;z-index:100;}
+	.gray{background-color:gray;position: fixed;left:70px;top:10px;z-index: 3;}
+	.yellow{background-color: #FFCC00;z-index: 3;}
+	.black{background-color: #111;z-index: 3;}
 </style>
 </head>
 
 <body>
 	<div class="box red">1</div>
-	<div class="box green">2</div>
+	<div class="box gray">2</div>
 	<div class="box yellow">3</div>
+	<div class="box black">4</div>
 
 </body>
 </html>
