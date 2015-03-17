@@ -39,3 +39,7 @@
 		float: right;
 	}
 
+	ul li{
+		letter-spacing: .1em;
+	}
+
