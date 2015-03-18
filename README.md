@@ -13,4 +13,9 @@
 ** == // Egalité
 ** === // Egalité stricte
 
+# La Console du Navigateur
+** console.info   //informations
+** console.warn   // Warning
+** console.error  //Erreur
+
 
