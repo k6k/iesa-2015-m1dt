@@ -5,3 +5,12 @@
 # Javascript
 * Google Map : mettre des dimensions dans la DIV
 
+# Git CMD
+** /!\ Git Checkout . : Restaure les fichiers en local depuis le dernier commit
+
+# Opérateurs
+** = // Assignation
+** == // Egalité
+** === // Egalité stricte
+
+
