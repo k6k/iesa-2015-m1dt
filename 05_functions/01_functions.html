@@ -6,19 +6,23 @@
 	</head>
 	<body>
 		<script type="text/Javascript">
-			function displayHello(){
-				console.log("Bonjour");
-			}
-
+			
+            bePolite();
 			function bePolite(){
 					displayHello();
 					sayThanks();
 			}
-
-			function sayThanks(){
-				console.log("Dis Merci !");
+			function displayHello(){
+				saySomething("Bonjour");
 			}
-		    bePolite();
+			function sayThanks(){
+				saySomething("Dis Merci !");
+			}
+		    
+		    function saySomething(something)
+		    {
+		    	console.log(something);
+		    }
 		</script>
 	</body>
 </html>
