@@ -18,4 +18,8 @@
 ** console.warn   // Warning
 ** console.error  //Erreur
 
+# Boucles
+** Continue; : Courcircuite sur l'itération suivante
+** break;    : Arrête l'exécution de la boucle
+
 
