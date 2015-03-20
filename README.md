@@ -1,6 +1,8 @@
 #iesa-2015-m1dt 
 #####[MarkDown Syntax :](http://daringfireball.net/projects/markdown/syntax "MarkDown") .
 
+#NEWS
+* SMARTMAKER : http://hellobiz.fr/une-solution-peut-convertir-des-notes-presentes-sur-un-tableau-blanc-au-format-numerique/
 
 # Javascript
 * Google Map : mettre des dimensions dans la DIV
