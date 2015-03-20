@@ -15,8 +15,14 @@
 			<label for="prenom">Prenom</label><br>
 			<input type="text" name='prenom'><br><br>
 
-			<input type="submit" value="Envoyer"><br>
+			<input type="submit" value="Envoyer" name="submit"><br>
 		</fieldset>
 	</form>
+	<?php 
+			if(isset($_GET) && (isset($_GET['nom']) && !empty($_GET['nom'])) && (isset($_GET['prenom']) && !empty($_GET['prenom']))){
+				$identity = $_GET['prenom'].' '.$_GET['nom'];
+				echo "<div style='color:red'> Vous avez saisi ".$identity."</div>";
+			}
+	 ?>
 </body>
 </html>
