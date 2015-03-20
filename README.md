@@ -1,7 +1,7 @@
 #iesa-2015-m1dt 
 #####[MarkDown Syntax :](http://daringfireball.net/projects/markdown/syntax "MarkDown") .
 
-#NEWS
+# NEWS
 * SMARTMAKER : http://hellobiz.fr/une-solution-peut-convertir-des-notes-presentes-sur-un-tableau-blanc-au-format-numerique/
 
 # Javascript
@@ -23,5 +23,8 @@
 # Boucles
 ** Continue; : Courcircuite sur l'itération suivante
 ** break;    : Arrête l'exécution de la boucle
+
+# Fonctions
+** Surtout pas utiliser le retour d'un Setter
 
 
