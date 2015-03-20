@@ -26,5 +26,6 @@
 
 # Fonctions
 ** Surtout pas utiliser le retour d'un Setter
+** Serveur d'intégration continue
 
 

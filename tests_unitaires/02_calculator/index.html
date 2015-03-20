@@ -3,6 +3,7 @@
 	
 	<head>
 		<link rel="stylesheet" href="../qunit-git.css">
+		<META HTTP-EQUIV="Refresh" CONTENT="10">
 		<script type="text/javascript" src="../qunit-git.js"></script>
 		<title>Javascript Functions Calculator</title>
 	</head>
@@ -15,7 +16,7 @@
 			
             
 			function addition(num1,num2){
-					return num1+num2;
+					//return num1+num2;
 			}
 			function minus(num1,num2){
 					return num1-num2;
@@ -31,7 +32,12 @@
 
 		    QUnit.test("Date Addition succeed",
 				function(assert){
-					assert.equal(addition(1,3),4,"4 expected")
+					assert.equal(addition(3,5),8,"Addition de 3 et 5 expected")
+			});
+
+		    QUnit.test("Date Addition fail",
+				function(assert){
+					assert.equal(addition(3,5),7,"Addition de 3 et 5 expected")
 			});
 
 		    QUnit.test("Soustraction",
