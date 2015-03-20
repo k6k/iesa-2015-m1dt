@@ -28,4 +28,13 @@
 ** Surtout pas utiliser le retour d'un Setter
 ** Serveur d'intégration continue
 
+# Jenkins
+** Qui crée un serveur d'intégration continue en récupérant (clone) toutes les modifications sur le serveur et les tests
+
+# SeleniumHQ.org : Tests utilisateurs
+** Scénario utilisateur
+** Intégration continue -> Continuous delivery
+
+# Test Driven Developpement
+** J'écris mon test et après je code
 

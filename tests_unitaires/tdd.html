@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+	
+	<head>
+		<link rel="stylesheet" href="qunit-git.css">
+		<script type="text/javascript" src="qunit-git.js"></script>
+		<title>Javascript Functions Calculator</title>
+	</head>
+	<body>
+
+
+		<div id="qunit"></div>
+		<div id="qunit-fixture"></div>
+		<script type="text/Javascript">
+		function addition(a,b){
+			return a+b;
+		}
+		    QUnit.test("Date Addition succeed",
+				function(assert){
+					assert.equal(addition(3,5),0,"Addition de 3 et 5 expected")
+			});
+
+			QUnit.test("Date Addition succeed",
+				function(assert){
+					assert.equal(addition(5,5),10,"Addition de 5 et 5 expected")
+			});
+		</script>
+	</body>
+</html>
